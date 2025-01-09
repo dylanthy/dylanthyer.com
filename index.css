@@ -1,3 +1,7 @@
+html, body {
+    min-width: 1250px; /* Replace 1024px with your desired minimum width */
+}
+
 .silkscreen-regular {
     font-family: "Silkscreen", serif;
     font-weight: 400;
@@ -18,7 +22,9 @@ body {
     color: #F2EAE4;
     background: linear-gradient(to right, #734E38, #A6866A);
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the gradient covers the whole screen */
+    background-attachment: fixed; /* Locks the background in place */
 }
 
 /* Contact Section Styles */
@@ -29,10 +35,10 @@ body {
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     padding: 10px 10px;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
@@ -157,23 +163,4 @@ p {
     padding: 15px;
     border-radius: 45px;
 
-}
-
-/* Scroll Guide Styles */
-.scroll-guide {
-    position: absolute;
-    bottom: 20px;
-    font-size: 1.2em;
-    color: #D9CBBF;
-    font-weight: bold;
-}
-
-.scroll-guide-left {
-    left: 20px;
-    text-align: left;
-}
-
-.scroll-guide-right {
-    right: 20px;
-    text-align: right;
 }
