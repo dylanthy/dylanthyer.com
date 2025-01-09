@@ -1,3 +1,26 @@
+.silkscreen-regular {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "silkscreen";
+    overflow: hidden;
+    color: #F2EAE4;
+    background: linear-gradient(to right, #734E38, #A6866A);
+    background-position: center;
+    background-repeat: repeat;
+}
+
 /* Contact Section Styles */
 .contact-section {
     position: fixed;
@@ -7,7 +30,7 @@
     display: flex;
     gap: 10px;
     background: rgba(0, 0, 0, 0.05);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -24,99 +47,68 @@
     transform: scale(1.2);
 }
 
-/* Landing Section Styles */
+.container {
+    display: flex;
+    width: max-content;
+    overflow: hidden;
+}
+
+.section {
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .LandingSection {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A6866A;
-    color: #F2EAE4;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.about-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 80%;
-    margin: auto;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #736F36;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.about-details {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 600px;
-    gap: 10px;
-}
-
-.about-details h1 {
-    font-size: 2.5em;
     color: #F2EAE4;
-    margin: 0;
-}
-
-.about-text {
-    font-size: 1.2em;
-    color: #D9CBBF;
-    line-height: 1.5;
-}
-
-/* Project Section Styles */
-.section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     box-sizing: border-box;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .project-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
+    align-items: normal;
+    position: absolute;
     gap: 10px;
 }
 
 .project-image {
-    width: 55vw;
+    width: 900px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     display: block;
+    align-self: flex-end;
+    box-shadow: 0px 4px 10px rgba(0, .1, .1, 0.2);
+    
 }
 
 .project-description {
     margin-top: auto;
     text-align: left;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 8px;
-    max-width: 35%;
+    max-width: 50%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     align-self: flex-end;
 }
 
 h2 {
     color: #F2EAE4;
+    font-size: 2em;
 }
 
 h3 {
@@ -125,4 +117,63 @@ h3 {
 
 p {
     color: #D9CBBF;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 650px;
+}
+
+.about-details h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.about-text {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 0;
+    color: #D9CBBF;
+}
+
+.profile-photo {
+    width: 350px;
+    border-radius: 30px;
+    object-fit: cover;
+    border: 3px solid #736F36;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 80%;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 45px;
+
+}
+
+/* Scroll Guide Styles */
+.scroll-guide {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.2em;
+    color: #D9CBBF;
+    font-weight: bold;
+}
+
+.scroll-guide-left {
+    left: 20px;
+    text-align: left;
+}
+
+.scroll-guide-right {
+    right: 20px;
+    text-align: right;
 }
