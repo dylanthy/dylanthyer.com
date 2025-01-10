@@ -60,7 +60,7 @@ body {
 }
 
 .section {
-    width: 75vw;
+    width: 1200px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -98,6 +98,7 @@ body {
     display: block;
     align-self: flex-end;
     box-shadow: 0px 4px 10px rgba(0, .1, .1, 0.2);
+    
     
 }
 
@@ -146,7 +147,7 @@ p {
 }
 
 .profile-photo {
-    width: 350px;
+    width: 500px;
     border-radius: 30px;
     object-fit: cover;
     border: 3px solid #736F36;
@@ -163,4 +164,63 @@ p {
     padding: 15px;
     border-radius: 45px;
 
+}
+
+@media (max-width: 1230px) {
+    html, body {
+        min-width: auto;
+        overflow-x: auto;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .LandingSection {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: static;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        align-self: center;
+    }
+
+    .project-description {
+        max-width: 90%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 10px auto;
+    }
 }
