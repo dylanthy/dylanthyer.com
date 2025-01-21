@@ -223,4 +223,13 @@ p {
         transform: none;
         margin: 10px auto;
     }
+    .profile-photo {
+        width: 250px;
+        border-radius: 30px;
+        object-fit: cover;
+        border: 3px solid #736F36;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    
 }
