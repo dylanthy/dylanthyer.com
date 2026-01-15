@@ -91,7 +91,7 @@ body {
 }
 
 .project-image {
-    width: 900px;
+    width: 700px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -106,24 +106,29 @@ body {
     margin-top: auto;
     text-align: left;
     background: rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 8px;
-    max-width: 50%;
+    width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     align-self: flex-end;
+    box-sizing: border-box;
 }
 
 h2 {
     color: #F2EAE4;
-    font-size: 2em;
+    font-size: 1.8em;
+    margin: 5px 0;
 }
 
 h3 {
     color: #D9CBBF;
+    margin: 5px 0;
 }
 
 p {
     color: #D9CBBF;
+    margin: 8px 0;
+    line-height: 1.4;
 }
 
 .about-details {
@@ -152,6 +157,56 @@ p {
     object-fit: cover;
     border: 3px solid #736F36;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #F2EAE4;
+    border-radius: 6px;
+    cursor: grab;
+    transition: background 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-thumb:hover {
+    background: #D9CBBF;
+}
+
+.scrollbar-thumb.dragging {
+    cursor: grabbing;
+    background: #A6866A;
+}
+
+.scrollbar-thumb-duplicate {
+    cursor: grab;
+}
+
+.scrollbar-thumb-duplicate:hover {
+    background: #D9CBBF;
+}
+
+.scrollbar-thumb-duplicate.dragging {
+    cursor: grabbing;
+    background: #A6866A;
 }
 
 .about-wrapper {
@@ -229,6 +284,10 @@ p {
         object-fit: cover;
         border: 3px solid #736F36;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .scrollbar-container {
+        display: none;
     }
 
     
