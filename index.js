@@ -225,8 +225,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", handleResize);
     updateLayout();
 
-    // Set initial scroll position to middle for proper wrapping
-    if (!isMobileView() && container.dataset.duplicated) {
-        window.scrollTo({ left: container.scrollWidth / 4, behavior: "instant" });
+    // Set initial scroll position to the beginning (landing section)
+    if (!isMobileView()) {
+        // Small timeout to ensure content is duplicated first
+        setTimeout(() => {
+            window.scrollTo({ left: 1, behavior: "instant" });
+        }, 0);
     }
 });
