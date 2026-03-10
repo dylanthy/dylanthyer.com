@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Silkscreen", serif;
+    color: #F2EAE4;
+    background: linear-gradient(to right, #734E38, #A6866A);
+    background-attachment: fixed;
+}
+
+.policy-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.policy-card {
+    width: min(1000px, 100%);
+    background: rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #F2EAE4;
+}
+
+h2 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    color: #F2EAE4;
+}
+
+p, li {
+    color: #D9CBBF;
+    line-height: 1.65;
+    font-size: 0.95rem;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+}
+
+a {
+    color: #F2EAE4;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.back-link {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .policy-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 0.85rem;
+    }
+}
